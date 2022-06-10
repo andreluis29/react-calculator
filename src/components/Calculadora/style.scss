@@ -1,0 +1,15 @@
+.calculator {
+  display: flex;
+  flex-wrap: wrap;
+  height: 537px;
+  width: 378px;
+  background: #534c4c;
+  margin: auto;
+  justify-content: center;
+}
+
+.calculator input {
+  width: 100%;
+  margin: 10px;
+  height: 100px;
+}
