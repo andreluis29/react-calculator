@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import './style.scss';
 
 export default function Button(props: { number: string, estadoPai: any }) {
@@ -7,7 +7,11 @@ export default function Button(props: { number: string, estadoPai: any }) {
   return (
     <div className="button" onClick={
       () => {
-        setNumerosEstado(number);
+        setNumerosEstado(
+          {
+            number
+          }
+      );
       }
     } > {number} </div>
   );
