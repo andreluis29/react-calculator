@@ -7,12 +7,13 @@ export default function Calculadora() {
   const [numeroParaExibicao, setNumerosEstado] = useState({
     number: '1',
   });
+
   return (
     <>
       <div className="calculator">
         <input type="text" placeholder={numeroParaExibicao.number} disabled />
         {
-          calculatorNumber.map((element, index) => (
+          calculatorNumber.map((element) => (
             <Button number={element} estadoPai={{ element, setNumerosEstado }} key={element}/>))
         }
       </div>
