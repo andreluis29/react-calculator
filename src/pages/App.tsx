@@ -1,5 +1,5 @@
 import React from 'react';
-import Calculadora from '../components/Calculadora';
+import Calculadora from '../components/Calculadora/Calculadora';
 import './style.scss';
 
 function App() {
